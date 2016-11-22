@@ -1,0 +1,111 @@
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font: 14px/1 'Open Sans', sans-serif;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  color: #4c4c4c;
+  background: #f8f8f8;
+}
+
+h1, h2, h3, h4, p, blockquote, figure, ol, ul {
+  margin: 0;
+  padding: 0;
+}
+
+main, li {
+  display: block;
+}
+
+h1, h2, h3, h4 {
+  font-size: inherit;
+}
+
+strong {
+  font-weight: bold;
+}
+
+a, button {
+  color: inherit;
+  transition: .3s;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  overflow: visible;
+  border: 0;
+  font: inherit;
+  -webkit-font-smoothing: inherit;
+  letter-spacing: inherit;
+  background: none;
+  cursor: pointer;
+}
+
+::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+:focus {
+  outline: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border: 0;
+}
+
+input[type=text] {
+  border: none;
+  /*border-radius: 5px;*/
+  padding: 0 10px;
+  font-size: 13px;
+  line-height: 35px;
+  outline: none;
+  font-style: italic;
+  color: #4c4c4c;
+  transition: box-shadow .3s, background .3s;
+}
+
+input[type=text].default {
+  background: #fbfbfb;
+  box-shadow: 0 0 0 1px #e6e6e6;
+
+  &:focus {
+    box-shadow: 0 0 0 1px #e8e9ed, inset 0 0 0 1px #e8e9ed;
+    background: #fff;
+  }
+}
+
+input[type=text].round {
+  border-radius: 20px;
+  padding: 0 15px;
+}
+
+input[type=text].white {
+  background: #fff;
+}
+
+.btn-round {
+  padding: 12px 30px;
+  border-radius: 20px;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+
+  &:hover {
+    background: #ffc80a;
+  }
+
+  &--outline {
+    box-shadow: 0 0 0 2px #ffc80a;
+  }
+}

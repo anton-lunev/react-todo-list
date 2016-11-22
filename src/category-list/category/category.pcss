@@ -1,0 +1,39 @@
+.internal-tree {
+  margin-left: 15px;
+}
+.category {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  padding: 5px 10px;
+  transition: background .2s;
+
+  &:hover {
+    background: #fff;
+  }
+  &__left-side {
+    display: flex;
+  }
+  &__collapse {
+    position: absolute;
+    left: -23px;
+    top: 5px;
+  }
+  &__title {
+    display: flex;
+    align-items: center;
+  }
+  &__buttons {
+    display: flex;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .2s;
+  }
+  &:hover &__buttons {
+    opacity: 1;
+    visibility: visible;
+  }
+}

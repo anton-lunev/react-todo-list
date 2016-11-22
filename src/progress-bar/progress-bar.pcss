@@ -1,0 +1,20 @@
+.progress-bar {
+  height: 4px;
+  margin-bottom: -2px;
+  background: #f9593a;
+  position: relative;
+  transition: all .5s;
+  width: 0;
+
+  &:after {
+    content: '';
+    top: 0;
+    right: -6px;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 4px 6px 0 0;
+    border-color: #f9593a transparent transparent transparent;
+  }
+}

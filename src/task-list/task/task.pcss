@@ -1,0 +1,94 @@
+.task {
+  display: flex;
+  align-items: center;
+
+  &__checkbox {
+    margin-right: 5px;
+    color: #9fa3a7;
+  }
+  &__body {
+    padding: 6px 5px 7px 5px;
+    box-shadow: 0 1px 0 0 #e8e9ed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__title {
+    font-size: 15px;
+  }
+  &__actions {
+    opacity: 0;
+    visibility: hidden;
+    color: #9fa3a7;
+    transition: all .15s;
+  }
+  &:hover &__actions {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.task-actions {
+  display: flex;
+  align-items: center;
+
+  &__item + &__item {
+    margin-left: 10px;
+  }
+}
+
+.task-action {
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: none;
+  padding: 1px;
+  transition: box-shadow .2s;
+
+  & .material-icons {
+    display: block;
+  }
+
+  &--edit:hover {
+    background: #0ebac5;
+    color: #fff;
+    box-shadow: 0 0 0 3px #0ebac5;
+  }
+  &--delete:hover {
+    background: #f9593a;
+    color: #fff;
+    box-shadow: 0 0 0 3px #f9593a;
+  }
+}
+
+.checkbox {
+  position: relative;
+  padding-left: 26px;
+  cursor: pointer;
+  box-sizing: border-box;
+
+  &--without-text {
+    width: 24px;
+    height: 24px;
+  }
+  &__input {
+    display: none;
+  }
+  &__icon {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: opacity .2s, visibility .2s;
+    visibility: visible;
+    opacity: 1;
+  }
+  &__input:checked ~ .checkbox__icon--unchecked {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  &__input:not(:checked) ~ .checkbox__icon--checked {
+    visibility: hidden;
+    opacity: 0;
+  }
+}

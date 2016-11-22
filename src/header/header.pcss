@@ -1,0 +1,38 @@
+@keyframes app-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.header-container {
+  box-shadow: 0 2px 0 0 #ffc80a;
+  background: #fff;
+}
+
+.header {
+  height: 55px;
+  display: flex;
+  padding: 5px;
+  justify-content: space-between;
+  &__section {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.app-logo {
+  display: flex;
+  align-items: center;
+
+  &__img {
+    height: 55px;
+    animation: app-logo-spin infinite 20s linear;
+  }
+  &__text {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
